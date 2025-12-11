@@ -1,18 +1,18 @@
 package com.pluralsight.NorthwindTradersAPI.model;
 
 public class Product {
-    private int productId;
+    private Integer productId;        // auto-generated
     private String productName;
-    private int supplierId;
-    private int categoryId;
+    private Integer supplierId;
+    private Integer categoryId;
     private String quantityPerUnit;
     private Double unitPrice;
-    private int unitsInStock;
-    private int unitsOnOrder;
-    private int reorderLevel;
-    private boolean discontinued;
+    private Short unitsInStock;
+    private Short unitsOnOrder;
+    private Short reorderLevel;
+    private Boolean discontinued;
 
-    public Product(int productId, String productName, int supplierId, int categoryId, String quantityPerUnit, Double unitPrice, int unitsInStock, int unitsOnOrder, int reorderLevel, boolean discontinued) {
+    public Product(Integer productId, String productName, Integer supplierId, Integer categoryId, String quantityPerUnit, Double unitPrice, Short unitsInStock, Short unitsOnOrder, Short reorderLevel, Boolean discontinued) {
         this.productId = productId;
         this.productName = productName;
         this.supplierId = supplierId;
@@ -25,11 +25,11 @@ public class Product {
         this.discontinued = discontinued;
     }
 
-    public int getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(Integer productId) {
         this.productId = productId;
     }
 
@@ -41,19 +41,19 @@ public class Product {
         this.productName = productName;
     }
 
-    public int getSupplierId() {
+    public Integer getSupplierId() {
         return supplierId;
     }
 
-    public void setSupplierId(int supplierId) {
+    public void setSupplierId(Integer supplierId) {
         this.supplierId = supplierId;
     }
 
-    public int getCategoryId() {
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 
@@ -73,51 +73,51 @@ public class Product {
         this.unitPrice = unitPrice;
     }
 
-    public int getUnitsInStock() {
+    public Short getUnitsInStock() {
         return unitsInStock;
     }
 
-    public void setUnitsInStock(int unitsInStock) {
+    public void setUnitsInStock(Short unitsInStock) {
         this.unitsInStock = unitsInStock;
     }
 
-    public int getUnitsOnOrder() {
+    public Short getUnitsOnOrder() {
         return unitsOnOrder;
     }
 
-    public void setUnitsOnOrder(int unitsOnOrder) {
+    public void setUnitsOnOrder(Short unitsOnOrder) {
         this.unitsOnOrder = unitsOnOrder;
     }
 
-    public int getReorderLevel() {
+    public Short getReorderLevel() {
         return reorderLevel;
     }
 
-    public void setReorderLevel(int reorderLevel) {
+    public void setReorderLevel(Short reorderLevel) {
         this.reorderLevel = reorderLevel;
     }
 
-    public boolean isDiscontinued() {
+    public Boolean getDiscontinued() {
         return discontinued;
     }
 
-    public void setDiscontinued(boolean discontinued) {
+    public void setDiscontinued(Boolean discontinued) {
         this.discontinued = discontinued;
     }
 
     @Override
     public String toString() {
-        return "\n Products: \n" +
-                " productId = " + productId + '\n' +
-                " productName = " + productName + '\n' +
-                " supplierID = " + supplierId + '\n' +
-                " categoryId = " + categoryId + '\n' +
-                " quantityPerUnit = " + quantityPerUnit + '\n' +
-                " unitPrice = " + unitPrice + '\n' +
-                " unitsInStock = " + unitsInStock + '\n' +
-                " unitsOnOrder = " + unitsOnOrder + '\n' +
-                " reorderLevel = " + reorderLevel + '\n' +
-                " discontinued = " + discontinued + '\n';
+        return "Product{" +
+                "productId=" + productId +
+                ", productName='" + productName + '\'' +
+                ", supplierId=" + supplierId +
+                ", categoryId=" + categoryId +
+                ", quantityPerUnit='" + quantityPerUnit + '\'' +
+                ", unitPrice=" + unitPrice +
+                ", unitsInStock=" + unitsInStock +
+                ", unitsOnOrder=" + unitsOnOrder +
+                ", reorderLevel=" + reorderLevel +
+                ", discontinued=" + discontinued +
+                '}';
     }
-
 }
