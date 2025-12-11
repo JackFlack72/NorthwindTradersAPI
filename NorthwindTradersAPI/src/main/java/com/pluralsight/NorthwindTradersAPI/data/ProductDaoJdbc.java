@@ -88,7 +88,7 @@ public class ProductDaoJdbc implements ProductDao {
     }
 
     // create
-    public Product add(Product product) {
+    public Product insert(Product product) {
         String query = """
         INSERT INTO products
             (ProductName, SupplierID, CategoryID, QuantityPerUnit,
